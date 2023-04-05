@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #FFFFFF;
+    font-size: 20px;
+
+    transition: all .5s ease-out;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+body {
+    background-color: #000000;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    padding: 0 20px;
+    background-color: #1e1f29;
+} 
+
+.block {
+    width: 390px;
+    min-height: 330px;
+
+    margin: 20px 20px;
+    padding: 10px;
+
+    background-color: #2f313f;
+}
+
+span {
+    color: #0000FF;
+    margin-right: 10px;
+}
+
+span:hover {
+    color: #8b8bff;
+}
+
+a {
+    color: #0000FF;
+}
+
+a:hover {
+    color: #8b8bff;
+}
+
+.mrg {
+    margin-left: 55px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.active-day {
+    background-color: #5d5e69;
+}
+
+.active-day span,
+.active-day a {
+    color: #000087;
+}
+
+.active-day .active-lesson {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+@media(max-width: 500px) {
+    .wrap {
+        padding: 0;
+    }
+
+    .block {
+        margin: 20px 0;
+    }
+}
