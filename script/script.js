@@ -17,10 +17,17 @@ const subjects = document.querySelectorAll('.active-day > .subject');
 
 
 for (let i = 0; i < start_lesson.length; i++) {
-    if (start_lesson[i] <= time) {
-        subjects[i].classList.add("active-lesson");
-        if (i != 0) {
-            subjects[i - 1].classList.remove("active-lesson");
+    if (date.getHours() >= 12 && date.getHours() < 18) {
+        if (start_lesson[i] <= time) {
+            subjects[i].classList.add("active-lesson");
+
+            if (i != 0) {
+                subjects[i - 1].classList.remove("active-lesson");
+            }
+        }
+    } else {
+        if (subjects[i].className == "subjects active-lesson") {
+            subjects[i].classList.remove("active-lesson");
         }
     }
 }
